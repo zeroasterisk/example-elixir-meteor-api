@@ -11,9 +11,7 @@ config :logger, level: :warn
 
 # Configure your database
 config :meteorappapi, Meteorappapi.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Mongo.Ecto,
   database: "meteorappapi_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  hostname: "localhost"
+  # pool: Ecto.Adapters.SQL.Sandbox

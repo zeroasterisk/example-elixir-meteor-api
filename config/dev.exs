@@ -35,9 +35,6 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :meteorappapi, Meteorappapi.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Mongo.Ecto,
   database: "meteorappapi_dev",
-  hostname: "localhost",
-  pool_size: 10
+  hostname: "localhost"
