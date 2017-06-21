@@ -38,9 +38,9 @@ defmodule Meteorappapi.Mixfile do
   defp deps do
     [{:phoenix, "~> 1.2.4"},
      {:phoenix_pubsub, "~> 1.0"},
-     # the mongodb_ecto & phoenix_ecto, both need to require same {:ecto, "~> 2.0"}
-     {:phoenix_ecto, github: "phoenixframework/phoenix_ecto", ref: "v3.0.1"},
-     {:mongodb_ecto, github: "zeroasterisk/mongodb_ecto", branch: "elixir-ecto-v2.0.1"},
+     # the mongodb_ecto & phoenix_ecto, both need to require same {:ecto, "~> 2.1"}
+     {:phoenix_ecto, "~> 3.2"},
+     {:mongodb_ecto, github: "zeroasterisk/mongodb_ecto", branch: "ecto-2.1"},
      #{:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
